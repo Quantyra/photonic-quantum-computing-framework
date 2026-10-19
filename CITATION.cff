@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Cite this index by exact commit and cite the component archives used separately."
+title: "Photonic Quantum Computing Framework"
+type: dataset
+authors:
+  - family-names: "Fredriksen"
+    given-names: "Daniel Eric"
+    affiliation: "Quantyra"
+repository-code: "https://github.com/Quantyra/photonic-quantum-computing-framework"
+url: "https://github.com/Quantyra/photonic-quantum-computing-framework"
+license: CERN-OHL-S-2.0
+abstract: >-
+  Public component index and provisional integration guide for modular
+  experimental optical hardware. Component archives have separate citations
+  and scoped licenses. No calibrated optical performance or functioning
+  quantum computation is established by this index.
