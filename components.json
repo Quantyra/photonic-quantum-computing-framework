@@ -54,19 +54,19 @@
       "name": "Quantyra optical fixture system",
       "role": "Source stand, dual-jig cradle and ambient hood",
       "repository_url": "https://github.com/Quantyra/optical-fixture-system",
-      "release_version": "v1.0.0",
+      "release_version": "v1.0.1",
       "design_version": null,
-      "release_url": "https://github.com/Quantyra/optical-fixture-system/releases/tag/v1.0.0",
-      "source_url": "https://github.com/Quantyra/optical-fixture-system/tree/c1791c40d3bec0fbfbd1254e00c7e513e18fa512",
-      "source_commit": "c1791c40d3bec0fbfbd1254e00c7e513e18fa512",
+      "release_url": "https://github.com/Quantyra/optical-fixture-system/releases/tag/v1.0.1",
+      "source_url": "https://github.com/Quantyra/optical-fixture-system/tree/896505162a5071a4d7b6152c34f7ddb40a4cb497",
+      "source_commit": "896505162a5071a4d7b6152c34f7ddb40a4cb497",
       "concept_doi": "10.5281/zenodo.23484827",
-      "version_doi": "10.5281/zenodo.23484828",
-      "doi_evidence_url": "https://zenodo.org/api/records/23484828",
+      "version_doi": "10.5281/zenodo.23485390",
+      "doi_evidence_url": "https://zenodo.org/api/records/23485390",
       "licenses": [
         {
           "spdx": "CERN-OHL-S-2.0",
           "scope": "Fixture CAD/hardware, meshes, G-code and documentation",
-          "url": "https://github.com/Quantyra/optical-fixture-system/blob/c1791c40d3bec0fbfbd1254e00c7e513e18fa512/LICENSE"
+          "url": "https://github.com/Quantyra/optical-fixture-system/blob/896505162a5071a4d7b6152c34f7ddb40a4cb497/LICENSE"
         }
       ],
       "compatibility": {
@@ -87,7 +87,7 @@
         ],
         "modeled_lens_to_shutter_gap_mm": 18.2,
         "alignment": "Preferred 34 mm stand: source center X=-5, 0 or +5 relative to fixed dual body; physical mapping must be checked. Supported 32 mm narrow stand requires separately measured lateral placement.",
-        "stand_gcode_note": "Supplied stand G-code is dimensionally consistent with the 32 mm narrow stand; exact source slicing is not established. No supplied G-code matches the preferred 34 mm stand."
+        "stand_gcode_note": "Current stand G-code is dimensionally consistent with the preferred 34 mm stand; exact source slicing is not established. The supported 32 mm narrow STL has no current G-code and requires re-slicing."
       },
       "status": {
         "publication": "released",
