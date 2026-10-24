@@ -1,9 +1,8 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-10-19",
+  "updated": "2026-10-23",
   "repository": "https://github.com/Quantyra/photonic-quantum-computing-framework",
   "catalogue_notes": [
-    "Null identifiers and links are pending publication, not reserved DOI claims.",
     "Component license scopes are distinct, not interchangeable options."
   ],
   "components": [
@@ -52,50 +51,82 @@
     {
       "id": "optical-fixture-system",
       "name": "Quantyra optical fixture system",
-      "role": "Source stand, dual-jig cradle and ambient hood",
+      "role": "Recommended keyed source stand and two-port male cradle; preserved legacy stands, cradle and hood",
       "repository_url": "https://github.com/Quantyra/optical-fixture-system",
-      "release_version": "v1.0.1",
+      "release_version": "v1.1.0",
       "design_version": null,
-      "release_url": "https://github.com/Quantyra/optical-fixture-system/releases/tag/v1.0.1",
-      "source_url": "https://github.com/Quantyra/optical-fixture-system/tree/896505162a5071a4d7b6152c34f7ddb40a4cb497",
-      "source_commit": "896505162a5071a4d7b6152c34f7ddb40a4cb497",
+      "release_url": "https://github.com/Quantyra/optical-fixture-system/releases/tag/v1.1.0",
+      "source_url": "https://github.com/Quantyra/optical-fixture-system/tree/81a1d395f9451685a1b03fb4f69ab38a8cefc0d1",
+      "source_commit": "81a1d395f9451685a1b03fb4f69ab38a8cefc0d1",
       "concept_doi": "10.5281/zenodo.23484827",
-      "version_doi": "10.5281/zenodo.23485390",
-      "doi_evidence_url": "https://zenodo.org/api/records/23485390",
+      "version_doi": "10.5281/zenodo.23609466",
+      "doi_evidence_url": "https://zenodo.org/api/records/23609466",
       "licenses": [
         {
           "spdx": "CERN-OHL-S-2.0",
           "scope": "Fixture CAD/hardware, meshes, G-code and documentation",
-          "url": "https://github.com/Quantyra/optical-fixture-system/blob/896505162a5071a4d7b6152c34f7ddb40a4cb497/LICENSE"
+          "url": "https://github.com/Quantyra/optical-fixture-system/blob/81a1d395f9451685a1b03fb4f69ab38a8cefc0d1/LICENSE"
         }
       ],
       "compatibility": {
-        "detector": "dual-port V11",
-        "source_foot_mm": [
-          34,
-          28
-        ],
-        "cradle_foot_mm": [
-          50,
-          32
-        ],
+        "detector": "Unchanged dual-port V11 jig",
         "nominal_axis_mm": 20,
-        "hood_clear_interior_mm": [
-          90,
-          90,
-          110
-        ],
-        "modeled_lens_to_shutter_gap_mm": 18.2,
-        "alignment": "Preferred 34 mm stand: source center X=-5, 0 or +5 relative to fixed dual body; physical mapping must be checked. Supported 32 mm narrow stand requires separately measured lateral placement.",
-        "stand_gcode_note": "Current stand G-code is dimensionally consistent with the preferred 34 mm stand; exact source slicing is not established. The supported 32 mm narrow STL has no current G-code and requires re-slicing."
+        "alignment": "Source-facing L/R positions 10 mm apart; withdraw 7.2 mm straight before moving 10 mm laterally and reinserting. Clearance joint without clamp or precision alignment claim.",
+        "spacers": "25/50/100 mm added stop spacing; cradle/spacer/stand and stacking CAD compatibility passed; physical extension fit untested.",
+        "hood": "Original hood incompatible with extended rig; independent ambient control required. Direct keyed pair hood clearance and withdrawal travel require checking.",
+        "legacy": "34 mm visual edge-alignment and 32 mm narrow stands remain alternatives; original cradle and hood preserved."
       },
       "status": {
         "publication": "released",
-        "physical": "User reports hood printing well after PETG profile correction; assembled fit and shielding pending.",
+        "physical": "User reports revised stand and jig physically fit; no calibrated precision or optical performance established.",
         "limitations": [
-          "CAD dimensions are not measured fit",
-          "Clips and cable envelope illustrative",
-          "IR opacity and optical performance unvalidated"
+          "Spacer physical fit untested",
+          "No measured repeatability, clamping or perfect alignment",
+          "Ambient shielding and optical performance unvalidated"
+        ]
+      }
+    },
+    {
+      "id": "optical-path-spacers",
+      "name": "Quantyra optical path spacers",
+      "role": "Stackable keyed extensions with 25/50/100 mm added stop spacing",
+      "repository_url": "https://github.com/Quantyra/optical-path-spacers",
+      "release_version": "v1.0.0",
+      "design_version": null,
+      "release_url": "https://github.com/Quantyra/optical-path-spacers/releases/tag/v1.0.0",
+      "source_url": "https://github.com/Quantyra/optical-path-spacers/tree/dfe02f7b79a98e9e71280a49abc08069819b8919",
+      "source_commit": "dfe02f7b79a98e9e71280a49abc08069819b8919",
+      "concept_doi": "10.5281/zenodo.23609526",
+      "version_doi": "10.5281/zenodo.23609527",
+      "doi_evidence_url": "https://zenodo.org/api/records/23609527",
+      "doi_status": "Published; archive downloaded and all22 tagged files verified",
+      "licenses": [
+        {
+          "spdx": "CERN-OHL-S-2.0",
+          "scope": "Portable OpenSCAD, three STL meshes and documentation; no G-code",
+          "url": "https://github.com/Quantyra/optical-path-spacers/blob/dfe02f7b79a98e9e71280a49abc08069819b8919/LICENSE"
+        }
+      ],
+      "compatibility": {
+        "fixture_release": "v1.1.0",
+        "detector": "Unchanged dual V11 via fixture male cradle",
+        "added_stop_spacing_mm": [
+          25,
+          50,
+          100
+        ],
+        "nominal_axis_mm": 20,
+        "cad": "Cradle/spacer/stand interfaces and stacking passed",
+        "dimension_note": "Added stop spacing is not overall length or refractive optical path length",
+        "hood": "Original fixture hood incompatible with extended rig; use independent ambient control"
+      },
+      "status": {
+        "publication": "GitHub release and Zenodo archive published; all 22 tagged archive files and checksums verified; DOI resolver verified",
+        "physical": "Physical spacer fit untested",
+        "limitations": [
+          "CAD compatibility only",
+          "No calibrated precision or optical performance claim",
+          "No G-code supplied"
         ]
       }
     }
