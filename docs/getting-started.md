@@ -8,6 +8,14 @@ Use the [jig v11.1.2 source snapshot](https://github.com/Quantyra/photodiode-jig
 
 The jig's authoritative [dual-port guide](https://github.com/Quantyra/photodiode-jig/blob/d7c9fc1ea49c0633ac80b1acda1bc9f219ac0a4f/designs/v11/dual-port/PRINT_SIMPLE_V11.md), [single-port guide](https://github.com/Quantyra/photodiode-jig/blob/d7c9fc1ea49c0633ac80b1acda1bc9f219ac0a4f/designs/v11/single-port/PRINT_SINGLE_V11.md), and [Arduino wiring/upload guide](https://github.com/Quantyra/photodiode-jig/blob/d7c9fc1ea49c0633ac80b1acda1bc9f219ac0a4f/docs/arduino-setup.md) govern their respective parts. Download the logger from that repository; do not substitute code from an unrecorded revision. Reslice authoritative STLs for your machine; review component G-code limitations before any reuse.
 
+## Optional bench organization
+
+[Electronics component storage v1.0.0](https://github.com/Quantyra/electronics-component-storage/releases/tag/v1.0.0) provides **12 STLs** (four bodies, three lids and five fixed-bay cabinets) plus editable OpenSCAD for sliding cases and cabinets. Use [exact source commit `1e9ae7a9a759ee0fc2413a03018a9c719e88ab74`](https://github.com/Quantyra/electronics-component-storage/tree/1e9ae7a9a759ee0fc2413a03018a9c719e88ab74) (source tree `a515a3a39477d8491a8fb0d4db034715784064cc`) and its [direct print and assembly guide](https://github.com/Quantyra/electronics-component-storage/blob/1e9ae7a9a759ee0fc2413a03018a9c719e88ab74/README.md). This is lab-support bench organization; it is not an optical or quantum performance component and does not change fixture or spacer geometry.
+
+The nominal Ender-3 V3 SE design uses back-down, openings-up rack printing. The full rack is 158.8 x 102.4 x 134.8 mm in use and 158.8 x 134.8 x 102.4 mm in print orientation. Cases slide freely without a screw; optional external M2x6 retention is described in the component guide. Physical fit, storage capacity, warping, stability and load remain untested. CAD and mesh validation passed; direct printing does not require a preliminary calibration part.
+
+Hardware CAD, STLs, documentation and build/validation helpers use CERN-OHL-S-2.0. [Separate paid qX / qXcellerate non-copyleft licensing](https://github.com/Quantyra/electronics-component-storage/blob/1e9ae7a9a759ee0fc2413a03018a9c719e88ab74/docs/licensing.md) requires an authorized written agreement; inquiry grants no rights. No DOI is assigned or requested. Existing optical components retain their own versions, DOI references and license boundaries.
+
 ## Bill of materials and roles
 
 | Item | Quantity / role | Selection check |

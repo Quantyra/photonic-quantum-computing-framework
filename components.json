@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "repository": "https://github.com/Quantyra/photonic-quantum-computing-framework",
   "catalogue_notes": [
     "Component license scopes are distinct, not interchangeable options."
@@ -127,6 +127,63 @@
           "CAD compatibility only",
           "No calibrated precision or optical performance claim",
           "No G-code supplied"
+        ]
+      }
+    },
+    {
+      "id": "electronics-component-storage",
+      "name": "Quantyra electronics component storage",
+      "role": "Lab-support bench organization: sliding cases and fixed-bay cabinets; no optical or quantum performance role",
+      "repository_url": "https://github.com/Quantyra/electronics-component-storage",
+      "release_version": "v1.0.0",
+      "design_version": null,
+      "release_url": "https://github.com/Quantyra/electronics-component-storage/releases/tag/v1.0.0",
+      "source_url": "https://github.com/Quantyra/electronics-component-storage/tree/1e9ae7a9a759ee0fc2413a03018a9c719e88ab74",
+      "source_commit": "1e9ae7a9a759ee0fc2413a03018a9c719e88ab74",
+      "source_tree": "a515a3a39477d8491a8fb0d4db034715784064cc",
+      "concept_doi": null,
+      "version_doi": null,
+      "doi_status": "No DOI assigned or requested",
+      "licenses": [
+        {
+          "spdx": "CERN-OHL-S-2.0",
+          "scope": "Hardware CAD, 12 STL meshes, documentation, labels, renders and build/validation helpers; no firmware or G-code",
+          "url": "https://github.com/Quantyra/electronics-component-storage/blob/1e9ae7a9a759ee0fc2413a03018a9c719e88ab74/LICENSE"
+        }
+      ],
+      "commercial_licensing": {
+        "name": "Separate paid qX / qXcellerate non-copyleft terms",
+        "guide_url": "https://github.com/Quantyra/electronics-component-storage/blob/1e9ae7a9a759ee0fc2413a03018a9c719e88ab74/docs/licensing.md",
+        "contact": "info@qxcellerate.com",
+        "conditions": "Authorized written agreement required; inquiry grants no rights. Commercial use under CERN is permitted subject to its conditions."
+      },
+      "compatibility": {
+        "stl_count": 12,
+        "case_bodies": 4,
+        "lids": 3,
+        "fixed_racks": 5,
+        "intended_printer": "Ender-3 V3 SE; nominal 220x220x250 mm",
+        "full_rack_use_mm": [
+          158.8,
+          102.4,
+          134.8
+        ],
+        "full_rack_print_mm": [
+          158.8,
+          134.8,
+          102.4
+        ],
+        "retention": "Free sliding without screw; optional externally sourced M2x6 keeper",
+        "optical_role": null
+      },
+      "status": {
+        "validation": "148/148 computational checks passed, including temporary source solid equivalence for all 12 meshes",
+        "physical": "Physical fit, capacity, warping, stability and load untested",
+        "limitations": [
+          "Bench organization only",
+          "No optical or quantum performance claim",
+          "No DOI assigned",
+          "No firmware or G-code"
         ]
       }
     }
