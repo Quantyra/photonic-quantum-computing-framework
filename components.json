@@ -141,9 +141,9 @@
       "source_url": "https://github.com/Quantyra/electronics-component-storage/tree/1e9ae7a9a759ee0fc2413a03018a9c719e88ab74",
       "source_commit": "1e9ae7a9a759ee0fc2413a03018a9c719e88ab74",
       "source_tree": "a515a3a39477d8491a8fb0d4db034715784064cc",
-      "concept_doi": null,
-      "version_doi": null,
-      "doi_status": "No DOI assigned or requested",
+      "concept_doi": "10.5281/zenodo.23634470",
+      "version_doi": "10.5281/zenodo.23634471",
+      "doi_status": "Published; exact release ZIP downloaded and all 39 tagged files verified; DOI resolver verified",
       "licenses": [
         {
           "spdx": "CERN-OHL-S-2.0",
@@ -182,9 +182,19 @@
         "limitations": [
           "Bench organization only",
           "No optical or quantum performance claim",
-          "No DOI assigned",
           "No firmware or G-code"
-        ]
+        ],
+        "publication": "GitHub release and Zenodo archive published; exact release ZIP and all 39 tagged files verified"
+      },
+      "doi_evidence_url": "https://zenodo.org/api/records/23634471",
+      "archive": {
+        "record_url": "https://zenodo.org/records/23634471",
+        "filename": "electronics-component-storage-v1.0.0.zip",
+        "bytes": 727700,
+        "sha256": "a8a555cdc065f1eff7f2333b778acaf5407b32a3b8e9ee035be45090b4c9f89b",
+        "tagged_files_verified": 39,
+        "method": "Manual API deposit of exact GitHub release ZIP; automatic GitHub-Zenodo integration not enabled",
+        "metadata_boundary": "Subsequent main-branch metadata updates are outside the immutable v1.0.0 archive"
       }
     }
   ]
